@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  ShazamView.swift
 //  ShazamIOS
 //
 //  Created by Manuel Enrique Amores Gonzalez on 19/10/22.
@@ -7,9 +7,10 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ShazamView: View {
     var body: some View {
-        ShazamView()
+        Text("ShazamView")
     }
 }
+
 

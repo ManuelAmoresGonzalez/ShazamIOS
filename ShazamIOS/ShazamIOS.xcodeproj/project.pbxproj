@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0900DF99290071CE003F6446 /* ShazamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0900DF98290071CE003F6446 /* ShazamModel.swift */; };
+		0900DF9B290071EB003F6446 /* ShazamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0900DF9A290071EB003F6446 /* ShazamView.swift */; };
+		0900DF9D29007224003F6446 /* ShazamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0900DF9C29007224003F6446 /* ShazamViewModel.swift */; };
 		09F61A64290059590052A890 /* ShazamIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F61A63290059590052A890 /* ShazamIOSApp.swift */; };
 		09F61A66290059590052A890 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F61A65290059590052A890 /* ContentView.swift */; };
 		09F61A682900595A0052A890 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09F61A672900595A0052A890 /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0900DF98290071CE003F6446 /* ShazamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShazamModel.swift; sourceTree = "<group>"; };
+		0900DF9A290071EB003F6446 /* ShazamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShazamView.swift; sourceTree = "<group>"; };
+		0900DF9C29007224003F6446 /* ShazamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShazamViewModel.swift; sourceTree = "<group>"; };
 		09F61A60290059590052A890 /* ShazamIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShazamIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09F61A63290059590052A890 /* ShazamIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShazamIOSApp.swift; sourceTree = "<group>"; };
 		09F61A65290059590052A890 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +38,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0900DF952900717C003F6446 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0900DF98290071CE003F6446 /* ShazamModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0900DF9629007191003F6446 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				0900DF9C29007224003F6446 /* ShazamViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0900DF972900719A003F6446 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0900DF9A290071EB003F6446 /* ShazamView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		09F61A57290059590052A890 = {
 			isa = PBXGroup;
 			children = (
@@ -51,7 +81,10 @@
 		09F61A62290059590052A890 /* ShazamIOS */ = {
 			isa = PBXGroup;
 			children = (
+				0900DF972900719A003F6446 /* Views */,
+				0900DF9629007191003F6446 /* ViewModels */,
 				09F61A63290059590052A890 /* ShazamIOSApp.swift */,
+				0900DF952900717C003F6446 /* Models */,
 				09F61A65290059590052A890 /* ContentView.swift */,
 				09F61A672900595A0052A890 /* Assets.xcassets */,
 				09F61A692900595A0052A890 /* Preview Content */,
@@ -138,7 +171,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				09F61A66290059590052A890 /* ContentView.swift in Sources */,
+				0900DF99290071CE003F6446 /* ShazamModel.swift in Sources */,
+				0900DF9B290071EB003F6446 /* ShazamView.swift in Sources */,
 				09F61A64290059590052A890 /* ShazamIOSApp.swift in Sources */,
+				0900DF9D29007224003F6446 /* ShazamViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +306,7 @@
 				DEVELOPMENT_TEAM = YSBTM95PBQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Usar microfono";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +336,7 @@
 				DEVELOPMENT_TEAM = YSBTM95PBQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Usar microfono";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
